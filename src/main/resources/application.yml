@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: demo
+  # Properties 파일 - Thymeleaf 설정
+  thymeleaf:
+    enabled:true
+    cache:false
+    check-template-location:true
+    prefix:classpath:/templates/
+    suffix:.html
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+        ddl-auto: update
+    hibernate:
+      format_sql: true
+      show_sql: true
+      dialect: org.hibernate.dialect.H2Dialect
+      ddl-auto: update
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:h2:~/local 
+    driverClassName: org.h2.Driver
+    username: sa 
+    password:
+  h2:
+    console:
+      enabled: true
+
+# yaml/yml 파일 - Thymeleaf 설정
+thymeleaf:
+  cache: false
+  check-template-location: true
+  prefix: classpath:/templates/
+  suffix: .html
+  enabled: true

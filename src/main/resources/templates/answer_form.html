@@ -1,0 +1,14 @@
+<html layout:decorate="~{layout}">
+
+<div layout:fragment="content" class="container">
+	<h5 class="my-3 border-bottom pb-2">답변 수정</h5>
+	<div class="mb-3">
+		<label for="content" class="form-label">내용</label>
+		<!-- th:field는 바인딩 -->
+		<!-- *{}는 객체의 속성 -->
+		<textarea th:field="*{content}" class="form-control" rows="10"></textarea>
+	</div>
+	<input type="submit" value="저장하기" class="btn btn-primary my-2">
+	</form>
+</div>
+</html>
