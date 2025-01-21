@@ -1,4 +1,4 @@
-package com.example.danbi;
+package com.danbi;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

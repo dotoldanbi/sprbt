@@ -18,7 +18,6 @@
 					th:href="@{/user/signup}">회원가입</a></li>
 			</ul>
 		</div>
-		<span th:text="'Logged as ' + ${#authentication.principal.username}" />
-
+		<span sec:authorize="isAuthenticated()" th:text="'Logged as ' + ${#authentication.principal.username}" />
 	</div>
 </nav>

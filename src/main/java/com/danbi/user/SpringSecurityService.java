@@ -1,4 +1,4 @@
-package com.example.danbi.user;
+package com.danbi.user;
 
 import java.util.ArrayList;
 import java.util.List;

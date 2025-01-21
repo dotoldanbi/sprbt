@@ -1,4 +1,4 @@
-package com.example.danbi.answer;
+package com.danbi.answer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

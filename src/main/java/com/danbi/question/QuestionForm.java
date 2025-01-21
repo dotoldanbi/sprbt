@@ -1,4 +1,4 @@
-package com.example.danbi.question;
+package com.danbi.question;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;

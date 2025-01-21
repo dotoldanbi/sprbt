@@ -1,13 +1,13 @@
-package com.example.danbi.answer;
+package com.danbi.answer;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.example.danbi.DataNotFoundException;
-import com.example.danbi.question.Question;
-import com.example.danbi.user.SiteUser;
+import com.danbi.DataNotFoundException;
+import com.danbi.question.Question;
+import com.danbi.user.SiteUser;
 
 import lombok.RequiredArgsConstructor;
 

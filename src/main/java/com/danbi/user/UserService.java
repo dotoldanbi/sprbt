@@ -1,11 +1,11 @@
-package com.example.danbi.user;
+package com.danbi.user;
 
 import java.util.Optional;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.example.danbi.DataNotFoundException;
+import com.danbi.DataNotFoundException;
 
 import lombok.RequiredArgsConstructor;
 

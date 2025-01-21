@@ -1,4 +1,4 @@
-package com.example.danbi.question;
+package com.danbi.question;
 
 import java.util.List;
 

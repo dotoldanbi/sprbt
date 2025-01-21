@@ -1,4 +1,4 @@
-package com.example.danbi.user;
+package com.danbi.user;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

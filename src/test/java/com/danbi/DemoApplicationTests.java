@@ -1,10 +1,10 @@
-package com.example.danbi;
+package com.danbi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.example.danbi.question.QuestionService;
+import com.danbi.question.QuestionService;
 
 @SpringBootTest
 class DanbiApplicationTests {

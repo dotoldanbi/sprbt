@@ -1,4 +1,4 @@
-package com.example.danbi.question;
+package com.danbi.question;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -11,8 +11,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.example.danbi.DataNotFoundException;
-import com.example.danbi.user.SiteUser;
+import com.danbi.DataNotFoundException;
+import com.danbi.user.SiteUser;
 
 import lombok.RequiredArgsConstructor;
 

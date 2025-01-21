@@ -1,4 +1,4 @@
-package com.example.danbi.question;
+package com.danbi.question;
 
 import java.security.Principal;
 
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.example.danbi.answer.AnswerForm;
-import com.example.danbi.user.SiteUser;
-import com.example.danbi.user.UserService;
+import com.danbi.answer.AnswerForm;
+import com.danbi.user.SiteUser;
+import com.danbi.user.UserService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

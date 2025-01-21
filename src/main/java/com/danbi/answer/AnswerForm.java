@@ -1,4 +1,4 @@
-package com.example.danbi.answer;
+package com.danbi.answer;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;

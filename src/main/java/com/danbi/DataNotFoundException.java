@@ -1,4 +1,4 @@
-package com.example.danbi;
+package com.danbi;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
