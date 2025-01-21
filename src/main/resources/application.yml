@@ -8,33 +8,22 @@ spring:
     check-template-location:true
     prefix:classpath:/templates/
     suffix:.html
-  jpa:
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        show_sql: true
-        dialect: org.hibernate.dialect.H2Dialect
-        ddl-auto: update
-    hibernate:
-      format_sql: true
-      show_sql: true
-      dialect: org.hibernate.dialect.H2Dialect
-      ddl-auto: update
-    defer-datasource-initialization: true
   datasource:
-    url: jdbc:h2:~/local 
-    driverClassName: org.h2.Driver
-    username: sa 
-    password:
-  h2:
-    console:
-      enabled: true
-
-# yaml/yml 파일 - Thymeleaf 설정
-thymeleaf:
-  cache: false
-  check-template-location: true
-  prefix: classpath:/templates/
-  suffix: .html
-  enabled: true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://27.35.76.169:3306/wind?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: tiger
+    initialization-mode: always
+    dbcp2.validation-query: SELECT 
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    open-in-view: false
+    show-sql: true
+    generate-ddl: true
+    hibernate.ddl-auto: create
+    properties.hibernate.format_sql: true
+logging:
+  level:
+    web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.BasicBinder: TRACE

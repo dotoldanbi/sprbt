@@ -9,39 +9,19 @@ spring:
     prefix:classpath:/templates/
     suffix:.html
   jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    open-in-view: false
     show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        show_sql: true
-        dialect: org.hibernate.dialect.H2Dialect
-        ddl-auto: update
-    hibernate:
-      format_sql: true
-      show_sql: true
-      dialect: org.hibernate.dialect.H2Dialect
-      ddl-auto: update
-    defer-datasource-initialization: true
+    generate-ddl: true
+    hibernate.ddl-auto: create
+    properties.hibernate.format_sql: true
   datasource:
-    url: jdbc:h2:~/local 
-    driverClassName: org.h2.Driver
-    username: sa 
-    password: 1234
-  h2:
-    console:
-      enabled: true
-      settings:
-        web-allow-others: true
-      path: /h2-console
-
-# yaml/yml 파일 - Thymeleaf 설정
-thymeleaf:
-  cache: false
-  check-template-location: true
-  prefix: classpath:/templates/
-  suffix: .html
-  enabled: true
-  
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://27.35.76.169:3306/wind?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: tiger
+    initialization-mode: always
+    dbcp2.validation-query: SELECT
 #logging
 #logging.logback.rollingpolicy.max-history: 로그 파일을 유지할 기간(일수)을 설정한다. 여기서는 30일 간의 로그만 유지하도록 했다.
 #logging.logback.rollingpolicy.max-file-size: 로그 파일 1개의 최대 용량(size)를 설정한다. 여기서는 100MB로 설정했다.
@@ -49,6 +29,10 @@ thymeleaf:
 #logging.logback.rollingpolicy.file-name-pattern: 로그 파일의 용량이 설정한 용량을 초과하거나 날짜가 변경될 경우 새로이 만들어질 로그 파일의 이름에 관한 규칙(pattern)을 설정한다.
 #logging.pattern.dateformat: 로그 출력 시 출력하는 날짜와 시간의 형식과 타임존(time zone)을 설정한다. 여기서는 Asia/Seoul로 설정했다. 만약 타임존을 설정하지 않을 경우 UTC 시간을 기준으로 출력한다.
 logging:
+  level:
+    web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.BasicBinder: TRACE
   logback:
     rollingpolicy:
       max-history: 30
